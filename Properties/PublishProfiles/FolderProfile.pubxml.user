@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\abp-samples-master\MicroserviceDemo\applications\AuthServer.Host\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-01-16T06:13:07.0907891Z;True|2023-01-14T09:42:27.1361181+08:00;True|2023-01-11T12:10:25.9284792+08:00;True|2023-01-11T00:06:07.5082336+08:00;True|2023-01-10T23:50:31.3410032+08:00;</History>
+  </PropertyGroup>
+</Project>
