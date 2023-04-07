@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MsDemo.Shared;
 using StackExchange.Redis;
 using System;
 using System.Linq;
@@ -63,7 +62,7 @@ namespace AuthServer.Host
 
             Configure<AbpMultiTenancyOptions>(options =>
             {
-                options.IsEnabled = MsDemoConsts.IsMultiTenancyEnabled;
+                options.IsEnabled = true;
             });
 
             Configure<AbpDbContextOptions>(options =>
@@ -130,10 +129,7 @@ namespace AuthServer.Host
             app.UseCors();
 
             app.UseAuthentication();
-            if (MsDemoConsts.IsMultiTenancyEnabled)
-            {
-                app.UseMultiTenancy();
-            }
+            app.UseMultiTenancy();
             app.UseIdentityServer();
             app.UseAuthorization();
 
